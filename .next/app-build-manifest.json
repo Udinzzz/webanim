@@ -21,10 +21,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/anime/[id]/page": [
+    "/search/[keyword]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/anime/[id]/page.js"
+      "static/chunks/app/search/[keyword]/page.js"
     ]
   }
 }
