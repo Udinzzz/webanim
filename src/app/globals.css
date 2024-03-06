@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  margin: 0;
+  padding: 0;
+}
+.dots {
+  width: 72px;
+  height: 17.3px;
+  background: radial-gradient(circle closest-side at left 8.6px top 50%,#474bff 90%,#0000),
+       radial-gradient(circle closest-side, #474bff 90%,#0000),
+       radial-gradient(circle closest-side at right 8.6px top 50%,#474bff 90%,#0000);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: dots-xm0185lg 0.8s infinite alternate;
+}
+
+@keyframes dots-xm0185lg {
+  to {
+     width: 28.8px;
+     height: 34.6px;
+  }
+}
