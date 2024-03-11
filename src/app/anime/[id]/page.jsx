@@ -9,10 +9,12 @@ const Page = async ({ params: { id } }) => {
             <div className="relative h-screen w-full">
                 <Image src={anime.data.images.webp.image_url} layout="fill" objectFit="cover" quality={100} alt="backround" className="absolute z-0 brightness-50" />
                 <div className="relative z-10">
-                    <h3 className="text-white px-4 py-4 text-2xl">{anime.data.title} - {anime.data.year}</h3>
+                    <h3 className="text-white px-4 pt-4 mx-4 text-2xl font-bold">{anime.data.title} - {anime.data.year}</h3>
                     <div className="flex flex-nowrap max-sm:flex-col text-white p-4">
+                        {/* <div className=""> */}
                             <Image src={anime.data.images.webp.image_url}
-                                alt={anime.data.images.jpg.image_url} width={250} height={250} className="w-full object-cover px-3 max-sm:w-1/2" />
+                                alt={anime.data.images.jpg.image_url} width={250} height={250} className="shadow-lg shadow-white rounded-md w-full object-cover mx-3 max-sm:w-1/2" />
+                                {/* </div> */}
                         <div>
                             <div className="flex overflow-x-auto max-sm:pt-3">
                                 <div className="mx-1.5 px-2 text-center rounded text-white bg-indigo-900"><p>{anime.data.duration}</p></div>

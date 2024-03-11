@@ -13,9 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-800`}>
+      <body className={`${inter.className} bg-gradient-to-b from-black to-slate-800`}>
         <Navbar/>
         {children}
+        <footer className="flex justify-center p-4"><a href="https://porto.flax.vercel.app/" className="text-white text-center">© 2024 | Faizal Kamaludin</a></footer>
       </body>
     </html>
   );

@@ -10,14 +10,20 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.15",
+    "classnames": "^2.5.1",
+    "embla-carousel-react": "^8.0.0",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-youtube": "^10.1.0"
+    "react-youtube": "^10.1.0",
+    "tw-elements": "^2.0.0"
   },
   "devDependencies": {
+    "@types/node": "20.11.25",
+    "@types/react": "18.2.64",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.3.0",
+    "typescript": "5.4.2"
   }
 }
