@@ -1,17 +1,10 @@
 
 const AnimeListHome = () => {
     return (
-        <div className="flex flex-row">
-        <div className="w-screen transition ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-white duration-300 rounded-md flex justify-center">
-            <div className="w-full h-auto cursor-pointer flex items-center flex-col">
-                    <img src="/naruto.jpeg" alt="...." width={1000} height={1000} className="w-full h-40 object-cover " />
+        <div className="m-3">
+            <div className="w-full h-32 bg-gradient-to-br from-red-600 to-sky-300 rounded-md flex items-center justify-center">
+                <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-red-900 to-black text-center font-serif text-2xl">GAK ADA IKLAN !!!</h1>
             </div>
-        </div>
-        <div className="w-screen transition ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-white duration-300 rounded-md flex justify-center">
-            <div className="w-full h-auto cursor-pointer flex items-center flex-col">
-                    <img src="/spy x.jpeg" alt="...." width={1000} height={1000} className="w-full h-40 object-cover " />
-            </div>
-        </div>
         </div>
     )
 }

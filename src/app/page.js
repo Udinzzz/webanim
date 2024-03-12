@@ -1,6 +1,6 @@
-import AnimeList from "@/app/Components/AnimeList/index"
-import Head from "@/app/Components/AnimeList/header";
-import { getAnimeResponse, getNestedAnimeResponse } from "@/libs/api-libs";
+import AnimeList from "./Components/AnimeList";
+import Head from "./Components/AnimeList/header"
+import { getAnimeResponse, getNestedAnimeResponse } from "../libs/api-libs";
 import AnimeListHome from "./Components/AnimeList/index1";
 const Home = async () => {
   const topAnime = await getAnimeResponse("top/anime", "limit=10")
@@ -12,9 +12,7 @@ const Home = async () => {
 
   return (
     <div className="w-full">
-      <div className="flex overflow-x-auto">
-      <AnimeListHome />
-      </div>
+      <div><AnimeListHome/></div>
       <Head title={'Paling Populer'} linkHref={'/populer'} linkTitle={'Lihat Semua'} />
       <div className="h-max gap-4 flex flex-row overflow-x-auto py-4 px-4">
         <AnimeList api={topAnime} />

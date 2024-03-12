@@ -6,7 +6,7 @@ const AnimeList = ({ api }) => {
             {api.data?.map((anime, index) => {
                 return (
                     <div className="w-full transition ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-white duration-300 rounded-md" key={index}>
-                        <Link href={`/anime/${anime.mal_id}`} className="w-60 max-sm:w-56 cursor-pointer flex items-center flex-col">
+                        <Link href={`/anime/${anime.mal_id}`} className="w-60 max-sm:w-48 cursor-pointer flex items-center flex-col">
                             {anime.images && anime.images.webp && anime.images.webp.image_url ? (
                                 <img src={anime.images.webp.image_url} alt="...." width={1000} height={1000} className="w-full h-72 object-none " />
                             ) : (
