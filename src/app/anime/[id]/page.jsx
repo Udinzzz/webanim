@@ -6,7 +6,7 @@ const Page = async ({ params: { id } }) => {
     const anime = await getAnimeResponse(`anime/${id}`)
     return (
         <>
-            <div className="relative h-screen w-full">
+            <div className="relative h-full w-full">
                 <Image src={anime.data.images.webp.image_url} layout="fill" objectFit="cover" quality={100} alt="backround" className="absolute z-0 brightness-50" />
                 <div className="relative z-10">
                     <h3 className="text-white px-4 pt-4 mx-4 text-2xl font-bold">{anime.data.title} - {anime.data.year}</h3>
