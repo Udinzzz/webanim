@@ -22,7 +22,7 @@ const Page = () =>{
     return(
         <>
         <HeaderMenu title={`ANIME TER-POPULER #${page}`}/>
-        <div className="grid grid-cols-5 gap-3 mx-3 max-sm:grid-cols-2">
+        <div className="flex flex-wrap gap-3 justify-center">
         <AnimeList api={topAnime}/>
         </div>
         <Pagination page={page} lastPage={topAnime.pagination?.last_visible_page} setPage={setPage}/>

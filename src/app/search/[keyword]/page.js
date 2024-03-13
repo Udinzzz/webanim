@@ -9,7 +9,7 @@ const Page = async ({ params }) => {
     return (
         <div className="w-full">
             <Head title={`pencarian dari ${decodedKeyword} ....`}/>
-            <div className="grid grid-cols-5 gap-3 mx-5 max-sm:grid-cols-2">
+            <div className="flex flex-wrap gap-3 justify-center">
             <AnimeList api={searchAnime} />
             </div>
         </div>
